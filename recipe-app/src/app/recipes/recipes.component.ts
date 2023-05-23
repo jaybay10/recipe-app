@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Recipe } from '../recipes/recipe.modal'
 
 @Component({
   selector: 'app-recipes',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class RecipesComponent {
 
+  selectedRecipe!: Recipe;
+
+  selectedRecipeDetail(recipe: Recipe){
+    this.selectedRecipe = recipe;
+  }
 }
