@@ -3,7 +3,7 @@
   <div class="row">
     <div class="col-md-12">
         <app-recipes *ngIf="recipe_feature === 'recipe'"></app-recipes>
-        <app-shopping-list *ngIf="shopping_list_feature === 'shopping-list'"></app-shopping-list>
+        <app-shopping-list *ngIf="recipe_feature !== 'recipe'"></app-shopping-list>
     </div>
   </div>
 </div>
